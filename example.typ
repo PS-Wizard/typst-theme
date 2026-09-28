@@ -1,4 +1,4 @@
-#import "lib.typ": editorial, finding, section-divider, verification-limits
+#import "lib.typ": editorial, finding, section-divider, verification-limits, etable
 
 #show: editorial.with(
   title: "A Review Of Odin Relay Frontend",
@@ -29,6 +29,21 @@
   [Stale editor state when inline card stays open],
   "src/pages/AdminDestinations.tsx: 122-132",
   [Renders `{editor && <DestinationEditor />}` without a `key` and the editor copies props into `useState` once.],
+)
+
+#section-divider()
+
+= Severity overview
+
+#etable(
+  ("Finding", "Severity", "Status"),
+  (
+    ("Unchecked loginUrl redirect", "Medium", "Open"),
+    ("Sign-out ignores fetch result", "Low", "Open"),
+    ("Server error text shown directly", "Low", "Fixed"),
+    ("Stale editor state", "Medium", "Open"),
+    ("One role controls two forms", "Low", "Fixed"),
+  ),
 )
 
 #section-divider()

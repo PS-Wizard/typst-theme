@@ -2,6 +2,7 @@
 #import "components/cover.typ": cover
 #import "components/finding.typ": cite-pill, bullet-item, finding
 #import "components/divider.typ": section-divider, verification-limits
+#import "components/table.typ": etable
 
 #let editorial(title: "", date: "", org: "", body) = {
   set page(paper: "a4", margin: (top: 24mm, bottom: 24mm, left: 24mm, right: 24mm), fill: white)
