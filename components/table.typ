@@ -28,5 +28,4 @@
       ..rows.flatten().map(c => text(size: 9pt, fill: ink)[#c])
     )
   ]
-  v(1em)
 }
